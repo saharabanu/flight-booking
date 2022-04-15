@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Booking</title>
+
+    <link rel="stylesheet" href="./payment.css" />
+  </head>
+  <body>
+    <div class="content">
+      <form id="booking-form" action="complete.html">
+        <header>
+          <p>Billing Information</p>
+        </header>
+       
+        <div class="grid-container">
+          <div class="grid-item">
+            <p id="adult"></p>
+          </div>
+          <div class="grid-item" >
+            <p id="adultPrice" class="block"></span></p>
+          </div>
+          <div class="grid-item">
+            <p id="child"></p>
+          </div>
+          <div class="grid-item">
+            <p id="childrenPrice" class="block"></span></p>
+          </div>
+          <div class="grid-item">
+            <p>Total amount to pay</p>
+          </div>
+          <div class="grid-item">
+            <p id="totalPrice" class="block"></span></p>
+          </div>
+          <div class="grid-item">
+            <p>Payment Method</p>
+          </div>
+          <div class="grid-item">
+            <select name="seatclass" id="classselect" required >
+              <option value="Bkash" required>Bkash</option>
+              <option value="Visacard"required>Visacard</option>
+              <option value="Master" required>Master Card</option>
+              <option value="Paypal" required>Paypal</option>
+            </select>
+          </div>
+          <form action="done.html">
+            <button class="submit">Confirm payment</button>
+          </form>
+        </div>
+      </form>
+    </div>
+    <script src="./payment.js"></script>
+  </body>
+</html>
+
