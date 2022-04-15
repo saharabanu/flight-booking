@@ -115,26 +115,23 @@ body{
   
   .container{
       color: black;
-      padding: 0px;
-      margin-top: 0px;
-      margin-bottom:0px;
-      margin-left:0px;
+      padding: 0 ;
       width: 100%;
       display: grid;
       justify-content: center;
       align-content: center;
-      /* margin-left:300px ; */
+     
       }
   .grid-container {
       background-color:#fff;
       box-sizing: border-box;
       width: 100%;
       display: grid;
-      /* justify-content: center; */
       grid-template-columns: 1fr 1fr;
       padding-top: 20px;
-      padding-right: 0px;
+      padding-right: 5px;
       padding-left: 10px;
+      margin: 0 2px;
       gap: 30px;
     }
 
