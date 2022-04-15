@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flight Booking</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    
+    <section class="form_section">
+      <form action="confirmation-page.html">
+        <div class="container">
+          <div class="header">
+            <h1>Airline Booking Form</h1>
+          </div>
+          <div class="grid-container">
+            
+            <div class="grid-item">
+              <input type="text" id="fname" placeholder="Full Name"  required/>
+            </div>
+            <div class="grid-item">
+              <input type="text"  id="email" placeholder="Enter your email" required/>
+            </div>
+            <div class="grid-item">
+              <input type="text" id="start" placeholder="Flying From*" required/>
+            </div>
+            <div class="grid-item">
+              <input type="text"  id="end" placeholder="Flying To*" required/>
+            </div>
+            <div class="grid-item">
+              <span>Departure Date</span> <br />
+              <input type="date"  id="depart" required/>
+            </div>
+            <div class="grid-item">
+              <span>Return Date</span> <br />
+              <input type="date"  id="return"required/>
+            </div>
+          </div>
+            <div class="grid-container2">
+            <div class="grid-item">
+              <span>Class</span> <br />
+              <select  id="classType">
+                <option value="Economy" selected>Economy</option>
+                <option value="Business">Business</option>
+                <option value="First">First</option>
+              </select>
+            </div>
+            <div class="grid-item">
+              <span>Adult(12+ yrs)</span> <br>
+              <input type="number" name="" id="adult" value="1" required>
+            </div>
+            <div class="grid-item">
+              <span>Child(2-11 yrs)</span> <br>
+              <input type="number" name="" id="child" value="0" required>
+            </div>
+            <div class="grid-item">
+              <span>NID</span> <br>
+              <input type="number" name="nid" id="nid" value="0" required>
+            </div>
+            <div class="grid-item">
+              <button class="submit">Submit Form
+              </button>
+            </div>
+          </div>
+          
+        </div>
+      </form>
+    </section>
+    
+
+    <!-- js -->
+    <script src="./index.js"></script>
+  </body>
+</html>
